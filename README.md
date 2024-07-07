@@ -1,30 +1,68 @@
-# MNIST Handwritten Digit Recognition
+Certainly! Here's a README.md file template for your GitHub repository `mnist-digit-recognition`:
 
-This project uses a Convolutional Neural Network (CNN) to classify handwritten digits from the MNIST dataset. The model is implemented using PyTorch and trained on the MNIST dataset loaded via Keras.
+```markdown
+# MNIST Digit Recognition
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+This repository contains code for training and evaluating a digit recognition model using the MNIST dataset.
 
-## Introduction
-The MNIST dataset consists of 60,000 training images and 10,000 test images of handwritten digits (0-9). This project demonstrates how to build a deep learning model using PyTorch to classify these digits.
+## Requirements
+
+- Python 3.x
+- TensorFlow 2.x
+- NumPy
+- Matplotlib
 
 ## Installation
 
-To run this project, you need to have Python and the following libraries installed:
-
-- torch
-- torchvision
-- matplotlib
-- keras
-- pandas
-- numpy
-
-You can install the required libraries using pip:
+Clone the repository:
 
 ```bash
-pip install torch torchvision matplotlib keras pandas numpy
+git clone https://github.com/oxyboron25/mnist-digit-recognition.git
+cd mnist-digit-recognition
+```
+
+Install dependencies using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Training the Model
+
+To train the model, run:
+
+```bash
+python train.py
+```
+
+This will train the digit recognition model using the MNIST dataset.
+
+### Evaluating the Model
+
+To evaluate the model on the test set, run:
+
+```bash
+python evaluate.py
+```
+
+This will evaluate the accuracy of the trained model on the MNIST test dataset.
+
+### Predicting Digit Images
+
+To predict digits from custom images, use:
+
+```bash
+python predict.py path_to_image
+```
+
+Replace `path_to_image` with the path to the image file you want to predict.
+
+## Structure
+
+- `data/`: Contains the MNIST dataset (automatically downloaded if not present).
+- `models/`: Saved models after training.
+- `train.py`: Script for training the digit recognition model.
+- `evaluate.py`: Script for evaluating the model's accuracy.
+- `predict.py`: Script for predicting digits from custom images.
