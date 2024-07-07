@@ -1,4 +1,3 @@
-```markdown
 # MNIST Digit Recognition
 
 This repository contains code for training and evaluating a digit recognition model using the MNIST dataset.
