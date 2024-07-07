@@ -1,5 +1,3 @@
-Certainly! Here's a README.md file template for your GitHub repository `mnist-digit-recognition`:
-
 ```markdown
 # MNIST Digit Recognition
 
